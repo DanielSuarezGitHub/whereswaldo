@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+  font-style: inherit;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  height: 10vh;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 0px 30px;
+  background-color: white;
+  box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.75);
+}
+
+ul {
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+ul li:nth-child(3) {
+  margin-left: auto;
+}
+
+img {
+  max-height: 10vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body:has(.home) {
+  background-color: rgb(236, 138, 138);
+}
+
+.level {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  max-width: 600px;
+  max-height: 300px;
+  gap: 40px;
+  border-radius: 40px;
+  background-color: white;
+  overflow: hidden;
+  font-size: calc(0.5vw + 16px);
+}
+
+.levelSelection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin-top: 10%;
+  justify-content: center;
+}
+
+.level h2 {
+  margin-left: 10%;
+}
+
+.levelImage {
+  width: 70%;
+  max-height: 100%;
+  cursor: crosshair;
+}
+
+.levelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 5vh;
+}
+
+.time {
+  font-size: 2rem;
+}
+
+.characters {
+  height: 50px;
+  display: flex;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.characters img {
+  height: 700px;
+  border-radius: 60px;
+}
+
+.Submitmodal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+  border-radius: 8px;
+  align-items: center;
+  gap: 15px;
+}
+
+.Submitmodal input {
+  border: 0;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  background-color: black;
+  color: white;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+.Submitmodal .buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.buttons button {
+  border: 1px solid white;
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.scores {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
